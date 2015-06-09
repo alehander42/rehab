@@ -1,0 +1,46 @@
+GIT
+  remote: https://github.com/alehander42/parser.git
+  revision: 7ce0a8e984e1521f1534c5914fcaf0afe5c50a9d
+  branch: master
+  specs:
+    parser (2.2.2.2)
+      ast (>= 1.1, < 3.0)
+
+GIT
+  remote: https://github.com/alehander42/unparser.git
+  revision: b4e08a34d69cbed933db1e158917bece3623f2f0
+  specs:
+    unparser (0.2.4)
+      abstract_type (~> 0.0.7)
+      adamantium (~> 0.2.0)
+      concord (~> 0.1.5)
+      diff-lcs (~> 1.2.5)
+      equalizer (~> 0.0.9)
+      parser (~> 2.2.2)
+      procto (~> 0.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    abstract_type (0.0.7)
+    adamantium (0.2.0)
+      ice_nine (~> 0.11.0)
+      memoizable (~> 0.4.0)
+    ast (2.0.0)
+    concord (0.1.5)
+      adamantium (~> 0.2.0)
+      equalizer (~> 0.0.9)
+    diff-lcs (1.2.5)
+    equalizer (0.0.11)
+    ice_nine (0.11.1)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    procto (0.0.2)
+    thread_safe (0.3.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  parser!
+  unparser!

@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'rehab'
+
+filename, convert_to = ARGV.first, ARGV[1].to_sym
+
+source = File.read(filename)
+
+CONVERTERS = {
+  functional: Rehab::FunkyConverter,
+  classy:     Rehab::ClassyConverter
+}
+
+converter = CONVERTERS[convert_to]
+puts converter.convert(source)
+
